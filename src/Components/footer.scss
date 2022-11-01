@@ -1,0 +1,73 @@
+.footer {
+  background: #464b50;
+  color: #fff;
+  p {
+    color: #fff;
+  }
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  &__widgets {
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: 475px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    grid-gap: 20px;
+    a {
+      color: #b5b5b5;
+    }
+    &-title {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    &-item {
+      display: flex;
+      column-gap: 10px;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      margin-top: 10px;
+    }
+    .free__seminar {
+      width: 140px;
+      margin-top: 10px;
+      padding: 5px 10px;
+      background: #fb3c17;
+      color: #fff;
+      border-radius: 5px;
+      font-weight: 500;
+      border: 1px solid;
+      &:hover {
+        border: 1px solid #fff;
+        background: #fff;
+        color: #1e1e1e;
+      }
+    }
+  }
+  &__copyright {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    i {
+      font-size: 18px;
+    }
+    a {
+      color: #fb3c17;
+    }
+  }
+}

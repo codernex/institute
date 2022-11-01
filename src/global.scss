@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  @media (min-width: 800px) and (max-width: 1400px) {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+  @media (max-width: 640px) {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+.row {
+  display: flex;
+  row-gap: 20px;
+  @media (max-width: 475px) {
+    flex-direction: column;
+  }
+}
+
+.p-5 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+
+  @media (max-width: 475px) {
+    align-items: center;
+    div {
+      width: 300px !important;
+      height: auto !important;
+    }
+  }
+}
+.btn__group {
+  display: flex;
+  column-gap: 20px;
+}
+
+.btn__global {
+  min-width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #ff1e1e;
+  color: #fff;
+  border-radius: 5px;
+  &:hover {
+    background: transparent;
+    color: #1e1e1e;
+    border: 1px solid #1e1e1e;
+  }
+}
+.slick-arrow {
+  &::before {
+    border: 1px solid #fb3c17;
+    background-color: #ff1e1e;
+    border-radius: 50%;
+  }
+}
+
+.container__mobile {
+  @media (max-width: 475px) {
+    padding: 0 20px;
+  }
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fb3c17;
+  background: #1e1e1e;
+}

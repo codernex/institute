@@ -1,0 +1,15 @@
+.hero {
+  h5 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h1 {
+    font-size: 40px;
+    color: #ff1e1e;
+    @media (max-width: 475px) {
+      font-size: 35px;
+    }
+  }
+}
