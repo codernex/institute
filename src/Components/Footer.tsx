@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF } from 'react-icons/fa';
+import {FaFacebookF, FaYoutube} from 'react-icons/fa';
 import './footer.scss';
 
 export const Footer = () => {
@@ -45,7 +45,7 @@ export const Footer = () => {
                 <i className='fa-solid fa-envelope'></i>
               </div>
               <p>
-                <a href='mailto:info@bornoit.com'>info@bornoit.com</a>
+                <a href='mailto:contact@bornoit.com'>contact@bornoit.com</a>
               </p>
             </li>
           </ul>
@@ -112,6 +112,9 @@ export const Footer = () => {
           <div className='social'>
             <a href='https://facebook.com/bornoItinstitute'>
               <FaFacebookF />
+            </a>
+            <a href='https://www.youtube.com/channel/UCv9kStvp2AlBaNdWNcyRFHg'>
+              <FaYoutube />
             </a>
           </div>
         </div>

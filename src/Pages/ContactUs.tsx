@@ -1,19 +1,12 @@
 import { useForm } from 'react-hook-form';
 import { FaEnvelopeOpen, FaLocationArrow, FaPhone } from 'react-icons/fa';
-// import sendMail from '../utils/mailer';
 
 export const ContactUs = () => {
   const { handleSubmit, register } = useForm<IForm>();
 
   const onSubmit = handleSubmit(
     ({ email, firstName, lastName, message, phone }) => {
-      // sendMail({
-      //   from: 'conatact@inst.bornoit.com',
-      //   email,
-      //   phone,
-      //   message,
-      //   name: firstName + lastName
-      // });
+      alert('Thank For Contacting Us!');
     }
   );
 
@@ -34,7 +27,7 @@ export const ContactUs = () => {
         </p>
       </div>
 
-      <form onSubmit={onSubmit} className='contact__form'>
+      <form onSubmit={() => onSubmit()} className='contact__form'>
         <div className='input__group'>
           <input
             {...register('firstName')}

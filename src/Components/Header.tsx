@@ -19,7 +19,7 @@ export const Header = () => {
         </span>
         <span className='email'>
           <FaEnvelope />
-          <a href='mailto:info@bornoit.com'>info@bornoit.com</a>
+          <a href='mailto:contact@bornoit.com'>contact@bornoit.com</a>
         </span>
       </nav>
       <nav className='app__bar container'>
@@ -30,7 +30,7 @@ export const Header = () => {
           <NavLink to='/'>হোম</NavLink>
           <NavLink to='/about-us'>আমাদের সম্পর্কে</NavLink>
           <NavLink to='/success-story'>সাফল্যের গল্প</NavLink>
-          <NavLink to='/courses'>কোর্সেস</NavLink>
+          <NavLink to='/courses'>কোর্স</NavLink>
           <NavLink to='/contact'>যোগাযোগ</NavLink>
         </ul>
 
